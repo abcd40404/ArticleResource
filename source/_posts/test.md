@@ -1,12 +1,9 @@
 ---
-title: programming
+title: Codeforces Round #340 (Div. 2)
 date: 2016-05-28 23:48:37
 tags: test
-categories: Codeforce
+categories: [解題區,Codeforce]
 ---
-
-Codeforces Round #340 (Div. 2)
-===
 
 ## A. Elephant
 [題目](http://codeforces.com/contest/617/problem/A)
