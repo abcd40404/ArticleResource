@@ -1,5 +1,5 @@
 ---
-title: Codeforces Round #340 (Div. 2)
+title: Codeforces Round 340 (Div. 2)
 date: 2016-05-28 23:48:37
 tags: test
 categories: [解題區,Codeforce]
