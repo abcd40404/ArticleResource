@@ -2,7 +2,7 @@
 title: Educational Codeforces Round 11
 date: 2016-07-24 22:12:59
 tags: binary_search
-categories: [解題區, Codeforce]
+categories: [解題區, Codeforces]
 ---
 
 ## C. Hard Process
