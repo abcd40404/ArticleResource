@@ -1,7 +1,7 @@
 ---
 title: {{ title }}
 date: {{ date }}
-tags: t
+tags:
 categories: 
 ---
 目錄
