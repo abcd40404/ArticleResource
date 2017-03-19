@@ -2,7 +2,7 @@
 title: LCS 模板
 date: 2017-03-16 10:34:32
 tags:
-categories: [解題區, DP]
+categories: [解題區, Template, DP]
 ---
 
 定義 dp[i][j]: s1...si 和 t1...tj 的最長共同子序列
