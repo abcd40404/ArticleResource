@@ -5,7 +5,7 @@ tags: binary_search
 categories: [解題區, Codeforces]
 ---
 
-## C. Hard Process
+# C. Hard Process
 \# binary_search \# two points
 [題目](http://codeforces.com/contest/660/problem/C)
 

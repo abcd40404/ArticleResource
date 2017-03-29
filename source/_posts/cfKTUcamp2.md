@@ -5,7 +5,7 @@ tags: binary_search
 categories: [解題區, Codeforces]
 ---
 
-## C. Rating Shuffle
+# C. Rating Shuffle
 \# binary_search
 [題目](http://codeforces.com/gym/100738/problem/C)
 
