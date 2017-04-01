@@ -2,12 +2,12 @@
 title: {{ title }}
 date: {{ date }}
 tags:
-categories: 
+categories:
 ---
 目錄
 ===
 
-##
+#
 [題目]()
 
 ## input
