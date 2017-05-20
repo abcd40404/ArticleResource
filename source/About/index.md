@@ -3,7 +3,12 @@ title: About
 date: 2017-03-15 23:59:47
 ---
 Last updated: 2017/3/22
-關於本站...
+
+Hello, I'm Kamikaze and I come from Taiwan.
+I started to learn programming since college, and this blog records what I learned.
+Welcome to leave message if you have anything to say : )
+
+## 關於本站
 覺得自己腦袋不好使, 寫過題目很容易忘
 有天就想有個 blog 紀錄
 路過了 morris's blog, 於是開始使用 Hexo
