@@ -34,3 +34,6 @@ categories: [學習札記, 資料庫]
                   如果建 constraint 時沒有給名稱, 系統會預設
                   利用 show create table 資料表名稱 來查詢相關資訊
                   ![](http://i.imgur.com/IGkEBod.png)
+查詢資料庫編碼: status;
+
+更改資料庫編碼: ALTER DATABASE 資料庫名稱 CHARACTER SET utf8 COLLATE utf8_general_ci;
