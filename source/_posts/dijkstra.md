@@ -37,3 +37,6 @@ int dijkstra(){
     return ...;
 }
 ```
+
+## 例題
+uva10986
