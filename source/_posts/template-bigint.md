@@ -1,5 +1,5 @@
 ---
-title: 大數運算 模版
+title: 大數運算
 date: 2017-10-24 23:31:43
 tags:
 categories: [解題區, Template, 其他]
