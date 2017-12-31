@@ -1,5 +1,5 @@
 ---
-title: Dijkstra Algorithm 模板
+title: Dijkstra Algorithm
 date: 2017-10-01 11:16:22
 tags:
 categories: [解題區, Template, Graph]
@@ -13,7 +13,7 @@ struct edge{
 int d[MAX_N];
 vector <edge> g[MAX_N];
 
-int dijkstra(){
+int dijkstra(int S){
     priority_queue <pii, vector<pii>, greater<pii> > pq; //d, v
     fill(d, d + n, INF);
     d[S] = 0;
@@ -39,4 +39,4 @@ int dijkstra(){
 ```
 
 ## 例題
-uva10986
+1. Uva 10986
