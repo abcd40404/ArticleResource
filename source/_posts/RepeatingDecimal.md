@@ -19,8 +19,10 @@ mathjax: true
 1. 不循環節長度 - 2 / 5 定理：
 分母拆解成 2 和 5 的乘積, 長度 = max(num_2, num_5);
 
-2. 循環節長度: 如果 a 沒有 2 or 5 的質因數, 且 a, b 互質
-則 b / a 的循環節長度為: {% math %} \min \{ e\in N,10^{e}\equiv 1(mod\ a) \} {% endmath %}
+2. 循環節長度: 如果 b 沒有 2 or 5 的質因數, 且 a, b 互質
+則 a / b 的循環節長度為: {% math %} \min \{ e\in N,10^{e}\equiv 1(mod\ b) \} {% endmath %}
 然後我們就可以用 [BSGS 演算法](http://abcd40404.github.io/2017/10/28/BSGS-Algorithm/)來求出 e
+
+3. 若是要列出循環小數有哪些, 可以用模擬除法, 需要注意的是循環結長度最大為分母
 
 
