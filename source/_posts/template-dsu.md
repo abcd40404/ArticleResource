@@ -24,10 +24,8 @@ struct Union_Find {
         a = find(a);
         b = find(b);
 
-        if(a == b)
-            return ;
-        if(num[a] > num[b])
-            swap(a, b);
+        if(a == b) return ;
+        if(num[a] > num[b]) swap(a, b);
         par[a] = b;
         num[b] += num[a];
     }
