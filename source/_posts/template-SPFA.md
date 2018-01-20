@@ -17,7 +17,7 @@ struct Edge {
 
 const int MAX_V = ...;
 
-int V, S; // V, Source
+int V;
 vector<Edge> g[MAX_V];
 int d[MAX_V];
 int cnt[MAX_V];
@@ -54,3 +54,6 @@ bool SPFA(int S) { // 回傳有無負環
 }
 
 ```
+
+## 例題
+1. POJ 3259
