@@ -2,7 +2,7 @@
 title: 併查集 Disjoint set
 date: 2017-02-02 18:22:18
 tags:
-categories: [解題區, Template, Date structure]
+categories: [解題區, Template, Data Structure]
 ---
 ## code
 ```cpp
@@ -15,10 +15,8 @@ struct Union_Find {
         }
     }
     int find(int x){
-        if(x == par[x])
-            return x;
-        else
-            return par[x] = find(par[x]);
+        if(x == par[x]) return x;
+        else return par[x] = find(par[x]);
     }
     void unite(int a, int b){
         a = find(a);

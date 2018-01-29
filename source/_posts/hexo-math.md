@@ -1,7 +1,7 @@
 ---
 title: 在 Hexo 顯示數學式
 date: 2017-10-28 12:36:31
-tags: hexo
+tags: Hexo
 categories: [學習札記, 網頁設計]
 ---
 
@@ -30,6 +30,23 @@ npm install hexo-renderer-mathjax --save
 
 此外好像還有 latex 語法加底線, 會被 markdown 當成斜體的問題
 不過還沒用到那些數學式, 之後再研究
+
+2018/1/24 更新:
+回到家之後, 筆電也不能正常顯示QQ
+於是在 **_config.yml** 加了就可以了
+```
+math:
+  engine: 'mathjax' # or 'katex'
+  mathjax:
+    src: custom_mathjax_source
+    config:
+      # MathJax config
+  katex:
+    css: custom_css_source
+    js: custom_js_source # not used
+    config:
+      # KaTeX config
+```
 
 參考：
 https://github.com/hexojs/hexo-math/issues/26
