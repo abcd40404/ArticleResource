@@ -14,3 +14,7 @@ categories: [學習札記, 資料結構]
 3. https://blog.masterliu.net/chairman-tree/
 4. http://blog.csdn.net/good_night_sion_/article/details/72919960
 5. http://chrysanthemum.is-programmer.com/posts/189902.html
+---
+帶修改
+1. https://tw.saowen.com/a/c97b1e0a1d5be2000652c21d5d3471ea86b13359a5acf317c6828c3bf006301f
+2. http://blog.csdn.net/u014664226/article/details/47839973
