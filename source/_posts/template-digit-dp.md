@@ -5,8 +5,38 @@ tags:
 categories: [解題區, Template, DP]
 ---
 以 旅行推銷員問題(TSP) 為例
-這是 top-down 的作法, 我覺得有點難想, 要搭配圖案
 複雜度: {%math%} O(2^{n}n^{2}) {%endmath%}
+
+# BOTTOM UP
+
+## 狀態
+```
+S代表目前已經走過的點集合, v為目前的點
+dp[S][v]: 已經走完 S, 目前在 v, 所花費的最小權重和
+```
+## 轉移
+找一點不在集合的點 u, 列舉集合的點 v 走到 u 的距離
+{%math%}dp[S | (1 << u)][u] = min\left \{  dp[S | (1 << u)][i], dp[S][v] + d[v][u], u \notin S \right \}{%endmath%}
+
+## Code
+```cpp
+for(int i = 0; i < (1 << n); i++)
+    fill(dp[i], dp[i] + n, INF);
+dp[1][0] = 0;
+for(int S = 1; S < (1 << n); S++){
+    for(int i = 0; i < n; i++){
+        if((S & (1 << i)) == 0){
+            for(int j = 0; j < n; j++){
+                if(S & (1 << j))
+                    dp[S | (1 << i)][i] = min(dp[S | (1 << i)][i], dp[S][j] + d[j][i]);
+            }
+        }
+    }
+}
+```
+
+# TOP DOWN 作法
+top-down 的作法, 我覺得有點難想, 要搭配圖案
 
 ## 狀態
 ```
