@@ -21,4 +21,4 @@ dp[j] = max(dp[j - wi] + vi), for i < n
 
 ## 例題
 1. Uva 10130
-2. POJ 3264
+2. POJ 3624

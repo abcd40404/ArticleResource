@@ -59,3 +59,30 @@ struct big{
     }
 };
 ```
+## 簡單版乘除
+有押四位
+index 小存低位
+
+```cpp
+#define base 10000
+
+void mul(vector<int> &a, int num){
+    int carry = 0;
+    for(int i = 0; i < sz(a); i++){
+        carry += a[i] * num;
+        a[i] = carry % base;
+        carry /= base;
+    }
+    if(carry) a.pb(carry);
+}
+
+void divide(vector<int> &a, int num){
+    int borrow = 0;
+    for(int i = sz(a) - 1; i >= 0; i--){
+        borrow = borrow * base + a[i];
+        a[i] = borrow / num;
+        borrow %= num;
+        if(sz(a) != 1 && a[i] == 0) a.pop_back();
+    }
+}
+```
