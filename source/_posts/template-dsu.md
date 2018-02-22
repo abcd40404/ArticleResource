@@ -7,7 +7,8 @@ categories: [解題區, Template, Data Structure]
 ## code
 ```cpp
 struct Union_Find {
-    int par[1010], num[1010];
+    const int MAX_N = ...;
+    int par[MAX_N], num[MAX_N];
     void init(int n){
         for(int i = 0; i < n; i++){
             par[i] = i;

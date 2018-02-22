@@ -1,7 +1,7 @@
 ---
 title: KTUcamp2
 date: 2016-07-26 22:46:21
-tags: binary_search
+tags: Binary Search
 categories: [解題區, Codeforces]
 ---
 
