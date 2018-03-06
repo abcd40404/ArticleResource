@@ -136,4 +136,13 @@ void bcc_tarjan(){
 # 例題
 1. POJ 1144
 2. Uva 796
+3. POJ 2117 (求拿掉割點增加的連通單元)
+4. POJ 1523 (求拿掉割點增加的連通單元)
+
+# 參考資料
+1. http://www.voidcn.com/article/p-mvhamgfv-sm.html
+2. www.voidcn.com/link?url=http://www.cnblogs.com/en-heng/p/4002658.html
+3. http://www.cnblogs.com/c1299401227/p/5402747.html
+4. http://blog.csdn.net/fuyukai/article/details/51303292
+5. http://sunmoon-template.blogspot.tw/2016/01/bridge-bridge-connected-component-bcc.html
 
