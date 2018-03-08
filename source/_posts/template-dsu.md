@@ -6,8 +6,9 @@ categories: [解題區, Template, Data Structure]
 ---
 ## code
 ```cpp
+const int MAX_N = ...;
+
 struct Union_Find {
-    const int MAX_N = ...;
     int par[MAX_N], num[MAX_N];
     void init(int n){
         for(int i = 0; i < n; i++){
