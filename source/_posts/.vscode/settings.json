@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "climits": "cpp"
+        "climits": "cpp",
+        "tuple": "cpp",
+        "*.tcc": "cpp"
     }
 }

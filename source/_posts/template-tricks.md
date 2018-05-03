@@ -22,3 +22,21 @@ bool Suf(string a, string b){
 ## 平移視窗
 
 ## 浮點數
+
+## Graph linked list
+```cpp
+const int MAX_N = 50010;
+struct node{
+    int to, w;
+    node* next;
+}*g[MAX_N], edges[MAX_N * 3];
+int tot;
+
+inline void addEdge(int a, int b, int c){
+    node *e = &edges[tot++];
+    e->to = b;
+    e->w = c;
+    e->next = g[a];
+    g[a] = e;
+}
+```
