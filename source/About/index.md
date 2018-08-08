@@ -2,7 +2,7 @@
 title: About
 date: 2017-03-15 23:59:47
 ---
-Last updated: 2017/3/22
+Last updated: 2018/08/09
 
 Hello, I'm Kamikaze and I come from Taiwan.
 I started to learn programming since college, and this blog records what I learned.
@@ -22,7 +22,7 @@ Kamikaze 這ID由來是因為我遊戲的暱稱都是叫 神風飄落
 | 屬性 | 內容                                                |
 |------|-----------------------------------------------------|
 | 姓名 | 林秉辭 |
-| 學歷 | 新北市立中正國中, 台北市立成功高中, 中正大學 資工三 |
+| 學歷 | 新北市立中正國中, 台北市立成功高中, 中正大學 資訊工程系, 交通大學 資訊科學與工程研究所 碩一|
 | 興趣 | 籃球, 健身, coding |
 | 常用 OJ 帳號 | abcd40404 |
 
