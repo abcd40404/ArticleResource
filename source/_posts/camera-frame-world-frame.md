@@ -12,7 +12,7 @@ categories: [學習札記, 視覺SLAM]
 
 順手整理一下相機的相關座標轉換
 相機模型中主要有四個平面座標系:
-1. 畫素平面座標系（u,v): 以圖像陣列中的位置表示
+1. 畫素平面座標系（u,v): 圖像在像素中的位置
 2. 像平面座標系 (影像物理座標（x,y)): 以相機主點為原點，場景點在圖像平面上的投影座標。 
 3. 相機座標系（Xc,Yc,Zc): 以相機為中心的三維座標。
 4. 世界座標系（Xw,Yw,Zw): 絕對座標系統中的三維座標。
@@ -20,19 +20,25 @@ categories: [學習札記, 視覺SLAM]
 當我們能將這四個座標軸作轉換, 那麼就能從二維影像得知在三維世界中的位置
 
 # 畫素平面 <=> 像平面
-這裡我的理解是, 兩者皆為二維平面
+因為畫素不能反映圖像真實尺寸
 像平面可以想成是一張二維影像
 只是被縮小成像素大小(物理層面)
 畫素單位是 pixel(微米大小), 而像平面單位是 mm
+
 假設畫素座標為 {%math%}(u, v, 1)^{T}{%endmath%} (這邊用的是齊次座標, 當成是(u, v)就好了)
-像平面上 x 座標為 dx, y 座標為 dy
+像平面座標 {%math%}(x, y){%endmath%}
+每個像素的真實尺寸為 dx * dy
+
+我們以圖像中心當作像平面座標的原點 {%math%}(u_{0}, v_{0}){%endmath%}
 所以: 
 {%math%}\left\{\begin{matrix}
 u=\frac{x}{dx}+u_{0}\\ 
 v=\frac{y}{dy}+v_{0}
 \end{matrix}\right.{%endmath%}
-當 x = y = 0 時對應到的像素座標為 {%math%}(u_{0}, v_{0}){%endmath%}
-不一定是 (0, 0), 所以有兩個平移量
+{%math%}\left\{\begin{matrix}
+x=udx-u_{0}dx\\ 
+y=udy-u_{0}dy
+
 若以矩陣來表示: 
 {%math%}\begin{bmatrix}
 u\\ 
@@ -52,13 +58,13 @@ y\\
 
 # 像平面 <=> 相機
 相機座標系是一個三維空間
+假設三維坐標中的一點 P, 投影到平面一點 p
 可以先參考這張圖:
 ![](https://i.imgur.com/xRh9odS.jpg)
-還不太清楚為什麼是這樣擺
-不過就先記著吧
+
 f 是焦距, P 為在 camera frame 上的一點, 投影到像平面上一點 p 
 根據相似三角形: {%math%}\frac{f}{Z} = \frac{x}{X} = \frac{y}{Y}{%endmath%}
-得到:
+得到像平面座標(x, y):
 {%math%}
 \left\{\begin{matrix}
 x=\frac{fX}{Z}\\ 
@@ -115,8 +121,9 @@ Z_{w}\\
 以上式子整理一下就可以得到
 
 # 參考
-1. https://www.zhihu.com/question/58489965
-2. https://codertw.com/%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80/415506/
-3. http://silverwind1982.pixnet.net/blog/post/134551091
-4. https://blog.csdn.net/liulina603/article/details/52953414
-5. https://blog.techbridge.cc/2018/04/22/intro-to-pinhole-camera-model/
+1. [机器视觉相机标定？](https://www.zhihu.com/question/58489965)
+2. [世界座標系和相機座標系,影象座標系的關係](https://codertw.com/%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80/415506/)
+3. [相机参数标定（camera calibration）及标定结果如何使用](https://blog.csdn.net/Aoulun/article/details/78768570)
+4. http://silverwind1982.pixnet.net/blog/post/134551091
+5. https://blog.csdn.net/liulina603/article/details/52953414
+6. https://blog.techbridge.cc/2018/04/22/intro-to-pinhole-camera-model/
