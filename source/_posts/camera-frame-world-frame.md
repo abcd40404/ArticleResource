@@ -38,6 +38,7 @@ v=\frac{y}{dy}+v_{0}
 {%math%}\left\{\begin{matrix}
 x=udx-u_{0}dx\\ 
 y=udy-u_{0}dy
+\end{matrix}\right.{%endmath%}
 
 若以矩陣來表示: 
 {%math%}\begin{bmatrix}
@@ -47,8 +48,8 @@ v\\
 \end{bmatrix}
 =
 \begin{bmatrix}
-\frac{1}{dx} & 0 & 0\\ 
-0& \frac{1}{dy} & 0\\ 
+\frac{1}{dx} & 0 & u_{0}\\ 
+0& \frac{1}{dy} & v_{0}\\ 
 0& 0 & 1
 \end{bmatrix}\begin{bmatrix}
 x\\ 

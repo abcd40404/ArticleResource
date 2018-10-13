@@ -68,18 +68,10 @@ sudo vim blacklist-nouveau.conf
 
 在文件裡添加
 blacklist nouveau
-blacklist lbm-nouveau
-options nouveau modeset=0
-alias nouveau off
-alias lbm-nouveau off
 ```
-接著到 tty1 ~ 7 都可以
+接著到 tty1 ~ 6 都可以
 按 Ctrl + Alt + F1 到 tty1, 我們要關閉圖形介面
 ```
-sudo init 3
-sudo rm /tmp/.X*
-// 上面這兩行我忘記我當初有沒有打了
-
 sudo service gdm stop
 // 註： 我是用 gnome, 所以是 gdm 不是 lightdm
 
